@@ -30,7 +30,7 @@
       "@juggling-hub/frontend/primitives": ["libs/frontend/primitives/src/index.ts"],
       "@juggling-hub/frontend/utils": ["libs/frontend/utils/src/index.ts"],
       "@juggling-hub/frontend/view-model": ["libs/frontend/domain/event/view-model/src/index.ts"],
-      "@juggling-hub/libs-backend-domain-event": ["libs/backend/domain-modules/event/src/index.ts"],
+      "@juggling-hub/libs-backend-domain-event": ["libs/backend/domain/event/src/index.ts"],
       "@juggling-hub/libs-shared-event-dto": ["libs/shared/domain-modules/event/dto/src/index.ts"],
       "@juggling-hub/shared/domain/event/data": ["libs/shared/domain/event/data/src/index.ts"],
       "@morpheus/openapi-typescript": ["plugins/openapi-typescript/src/index.ts"]

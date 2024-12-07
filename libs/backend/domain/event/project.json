@@ -1,11 +1,9 @@
 {
-  "name": "libs-backend-domain-modules-event",
+  "name": "libs-backend-domain-event",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/backend/domain-modules/event/src",
+  "sourceRoot": "libs/backend/domain/event/src",
   "projectType": "library",
-  "tags": [
-    "backend"
-  ],
+  "tags": ["backend"],
   "// targets": "to see all targets run: nx show project libs-backend-domain-event --web",
   "targets": {}
 }
