@@ -7,7 +7,7 @@
     "check": "npm run lint && npm run tsc && npm run test",
     "build": "nx run-many --target=build --all",
     "lint": "nx run-many --target=lint --all",
-    "serve:backend": "nx run backend-api-gateway:serve:development",
+    "serve:backend": "nx run backend-api:serve:development",
     "serve:frontend": "nx run frontend-juggling-hub:serve",
     "tsc": "npm run tsc:app && npm run tsc:lib",
     "tsc:app": "nx run-many --target=tsc-app --all",
