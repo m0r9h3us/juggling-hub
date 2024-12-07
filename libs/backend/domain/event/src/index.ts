@@ -1,1 +1,1 @@
-export * from './lib/usecase/get-events/get-events.module';
+export * from './lib/usecase/get-event-collection/get-event-collection.module';

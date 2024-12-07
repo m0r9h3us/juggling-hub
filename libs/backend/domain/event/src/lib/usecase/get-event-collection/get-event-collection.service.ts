@@ -1,5 +1,5 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
-import { GetEventsServiceInterface } from './get-events.service.interface';
+import { GetEventCollectionServiceInterface } from './get-event-collection.service.interface';
 import { LocationDto } from '../../dto/adress.dto';
 import { EventCollectionDto } from '../../dto/event-collection.dto';
 import {
@@ -8,7 +8,7 @@ import {
 } from '@juggling-hub/backend/external/juggling-edge-api';
 
 @Injectable()
-export class GetEventsService implements GetEventsServiceInterface {
+export class GetEventCollectionService implements GetEventCollectionServiceInterface {
     private readonly logger = new Logger('GetEventsService');
 
     constructor(

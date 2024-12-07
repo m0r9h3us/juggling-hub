@@ -1,1 +1,0 @@
-export const GET_EVENTS_SERVICE = Symbol('GET_EVENTS_SERVICE');

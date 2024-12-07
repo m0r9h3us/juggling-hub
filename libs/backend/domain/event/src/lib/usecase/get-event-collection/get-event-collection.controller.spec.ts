@@ -1,15 +1,15 @@
 import { TestBed } from '@suites/unit';
 import type { Mocked } from '@suites/unit';
-import { GetEventsController } from './get-events.controller';
-import { GetEventsService } from './get-events.service';
+import { GetEventCollectionController } from './get-event-collection.controller';
+import { GetEventCollectionService } from './get-event-collection.service';
 import { GET_EVENTS_SERVICE } from './get-events.module.di';
 
 describe('EventController', () => {
-    let controller: GetEventsController;
-    let getEventsService: Mocked<GetEventsService>;
+    let controller: GetEventCollectionController;
+    let getEventsService: Mocked<GetEventCollectionService>;
 
     beforeAll(async () => {
-        const { unit, unitRef } = await TestBed.solitary(GetEventsController).compile();
+        const { unit, unitRef } = await TestBed.solitary(GetEventCollectionController).compile();
 
         controller = unit;
         getEventsService = unitRef.get(GET_EVENTS_SERVICE);
