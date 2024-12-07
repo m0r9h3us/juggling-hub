@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { GetEventsController } from './get-events.controller';
+import { GetEventCollectionController } from './get-event-collection.controller';
 import { GetEventCollectionService } from './get-event-collection.service';
 import { JugglingEdgeApiIntegrationModule } from '@juggling-hub/backend/external/juggling-edge-api';
 import { GET_EVENT_COLLECTION_SERVICE } from './get-event-collection.module.di';
@@ -12,7 +12,7 @@ import { GET_EVENT_COLLECTION_SERVICE } from './get-event-collection.module.di';
             useClass: GetEventCollectionService
         }
     ],
-    controllers: [GetEventsController],
+    controllers: [GetEventCollectionController],
     exports: [GET_EVENT_COLLECTION_SERVICE]
 })
 export class GetEventsModule {}

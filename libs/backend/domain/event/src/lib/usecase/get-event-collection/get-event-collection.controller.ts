@@ -1,11 +1,11 @@
 import { Controller, Get, Inject } from '@nestjs/common';
-import { GET_EVENTS_SERVICE } from './get-events.module.di';
-import { GetEventsServiceInterface as GetEventCollectionServiceInterface } from './get-events.service.interface';
+import { GET_EVENT_COLLECTION_SERVICE } from './get-event-collection.module.di';
+import { GetEventCollectionServiceInterface } from './get-event-collection.service.interface';
 
 @Controller('events')
 export class GetEventCollectionController {
     constructor(
-        @Inject(GET_EVENTS_SERVICE)
+        @Inject(GET_EVENT_COLLECTION_SERVICE)
         private getEventCollectionService: GetEventCollectionServiceInterface
     ) {}
 
