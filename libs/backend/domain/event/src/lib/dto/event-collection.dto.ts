@@ -1,7 +1,7 @@
 import { Expose } from 'class-transformer';
 import { LocationDto, LocationInterface } from './adress.dto';
 
-export interface EventInterface {
+export interface EventCollectionInterface {
     id: string;
     title: string;
     start: string;
@@ -11,7 +11,7 @@ export interface EventInterface {
     websites: Array<string>;
 }
 
-export class EventDto implements EventInterface {
+export class EventCollectionDto implements EventCollectionInterface {
     @Expose()
     id: string;
 
@@ -33,7 +33,7 @@ export class EventDto implements EventInterface {
     @Expose()
     websites: Array<string>;
 
-    constructor(event: EventInterface) {
+    constructor(event: EventCollectionInterface) {
         this.id = event.id;
         this.title = event.title;
         this.start = event.start;

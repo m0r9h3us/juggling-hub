@@ -1,7 +1,7 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
 import { GetEventsServiceInterface } from './get-events.service.interface';
 import { LocationDto } from '../../dto/adress.dto';
-import { EventDto } from '../../dto/event.dto';
+import { EventCollectionDto } from '../../dto/event-collection.dto';
 import {
     JUGGLING_EDGE_API_INTEGRATION_SERVICE,
     JugglingEdgeApiIntegrationServiceInterface
@@ -18,8 +18,8 @@ export class GetEventsService implements GetEventsServiceInterface {
 
     public async getEvents() {
         const events = await this.httpService.getEvents();
-        return events.map((event): EventDto => {
-            return new EventDto({
+        return events.map((event): EventCollectionDto => {
+            return new EventCollectionDto({
                 id: event.eventID.toString(),
                 title: event.fullTitle,
                 description: event.blurb,

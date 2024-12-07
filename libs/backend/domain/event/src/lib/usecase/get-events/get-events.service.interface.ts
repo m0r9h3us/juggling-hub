@@ -1,5 +1,5 @@
-import { EventDto } from '../../dto/event.dto';
+import { EventCollectionDto } from '../../dto/event-collection.dto';
 
 export interface GetEventsServiceInterface {
-    getEvents(): Promise<Array<EventDto>>;
+    getEvents(): Promise<Array<EventCollectionDto>>;
 }
