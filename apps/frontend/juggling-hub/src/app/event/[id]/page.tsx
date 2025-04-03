@@ -1,4 +1,4 @@
-import { getMockEvents } from '@juggling-hub/frontend/domain/event/api-client';
+import { getMockEvents } from '@juggling-hub/frontend/bounded-context/event/api-client';
 import { notFound } from 'next/navigation';
 
 export type Props = {

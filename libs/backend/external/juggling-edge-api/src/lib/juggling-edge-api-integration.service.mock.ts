@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { plainToInstance } from 'class-transformer';
 import { validate } from 'class-validator';
-import { jugglingEdgeMockEvents } from '@juggling-hub/shared/domain/event/data';
+import { jugglingEdgeMockEvents } from '@juggling-hub/shared/bounded-context/event/data';
 import { JugglingEdgeEventCollectionDto, JugglingEdgeEventDto } from './juggling-edge-event.dto';
 
 @Injectable()

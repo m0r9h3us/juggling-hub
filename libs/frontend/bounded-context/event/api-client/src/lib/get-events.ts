@@ -1,7 +1,7 @@
 import {
     jugglingEdgeMockEvents,
     transformToBackendData
-} from '@juggling-hub/shared/domain/event/data';
+} from '@juggling-hub/shared/bounded-context/event/data';
 import dayjs from 'dayjs';
 import { EventModel } from '@juggling-hub/frontend/view-model';
 

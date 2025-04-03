@@ -1,7 +1,7 @@
 import { Separator, Switch } from '@juggling-hub/frontend/primitives';
-// import { EventCardProps } from '@juggling-hub/frontend/domain/event/components';
-import { fetchEventCollectionData } from '@juggling-hub/frontend/domain/event/api-client';
-import { EventCardCollection } from '@juggling-hub/frontend/domain/event/components';
+// import { EventCardProps } from '@juggling-hub/frontend/bounded-context/event/components';
+import { fetchEventCollectionData } from '@juggling-hub/frontend/bounded-context/event/api-client';
+import { EventCardCollection } from '@juggling-hub/frontend/bounded-context/event/components';
 
 export default async function Events() {
     const { data, error } = await fetchEventCollectionData();

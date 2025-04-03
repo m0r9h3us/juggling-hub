@@ -20,19 +20,27 @@
       "@juggling-hub/backend/external/juggling-edge-api": [
         "libs/backend/external/juggling-edge-api/src/index.ts"
       ],
-      "@juggling-hub/frontend/domain/event/api-client": [
-        "libs/frontend/domain/event/api-client/src/index.ts"
+      "@juggling-hub/frontend/bounded-context/event/api-client": [
+        "libs/frontend/bounded-context/event/api-client/src/index.ts"
       ],
-      "@juggling-hub/frontend/domain/event/components": [
-        "libs/frontend/domain/event/components/src/index.ts"
+      "@juggling-hub/frontend/bounded-context/event/components": [
+        "libs/frontend/bounded-context/event/components/src/index.ts"
       ],
       "@juggling-hub/frontend/icons": ["libs/frontend/icons/src/index.ts"],
       "@juggling-hub/frontend/primitives": ["libs/frontend/primitives/src/index.ts"],
       "@juggling-hub/frontend/utils": ["libs/frontend/utils/src/index.ts"],
-      "@juggling-hub/frontend/view-model": ["libs/frontend/domain/event/view-model/src/index.ts"],
-      "@juggling-hub/libs-backend-domain-event": ["libs/backend/domain/event/src/index.ts"],
-      "@juggling-hub/libs-shared-event-dto": ["libs/shared/domain-modules/event/dto/src/index.ts"],
-      "@juggling-hub/shared/domain/event/data": ["libs/shared/domain/event/data/src/index.ts"],
+      "@juggling-hub/frontend/view-model": [
+        "libs/frontend/bounded-context/event/view-model/src/index.ts"
+      ],
+      "@juggling-hub/libs-backend-bounded-context-event": [
+        "libs/backend/bounded-context/event/src/index.ts"
+      ],
+      "@juggling-hub/libs-shared-event-dto": [
+        "libs/shared/bounded-context-modules/event/dto/src/index.ts"
+      ],
+      "@juggling-hub/shared/bounded-context/event/data": [
+        "libs/shared/bounded-context/event/data/src/index.ts"
+      ],
       "@morpheus/openapi-typescript": ["plugins/openapi-typescript/src/index.ts"]
     }
   },

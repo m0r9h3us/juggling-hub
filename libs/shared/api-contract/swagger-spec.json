@@ -3,7 +3,7 @@
   "paths": {
     "/api/events": {
       "get": {
-        "operationId": "GetEventsController_getEvents",
+        "operationId": "GetEventCollectionController_getEvents",
         "parameters": [],
         "responses": {
           "200": {
@@ -13,7 +13,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/EventDto"
+                    "$ref": "#/components/schemas/EventCollectionDto"
                   }
                 }
               }
@@ -21,7 +21,7 @@
           }
         },
         "tags": [
-          "GetEvents"
+          "GetEventCollection"
         ]
       }
     }
@@ -75,7 +75,7 @@
           "longitude"
         ]
       },
-      "EventDto": {
+      "EventCollectionDto": {
         "type": "object",
         "properties": {
           "id": {

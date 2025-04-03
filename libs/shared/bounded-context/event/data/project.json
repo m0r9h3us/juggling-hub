@@ -1,7 +1,7 @@
 {
   "name": "libs-shared-event-data",
   "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shared/domain/event/dto/src",
+  "sourceRoot": "libs/shared/bounded-context/event/dto/src",
   "projectType": "library",
   "tags": [],
   "targets": {

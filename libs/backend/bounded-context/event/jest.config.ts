@@ -6,7 +6,7 @@ export default {
         '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }]
     },
     moduleFileExtensions: ['ts', 'js', 'html'],
-    coverageDirectory: '../../../../coverage/libs/backend/domain/event',
+    coverageDirectory: '../../../../coverage/libs/backend/bounded-context/event',
     passWithNoTests: true,
     setupFilesAfterEnv: ['jest-extended']
 };

@@ -2,7 +2,7 @@ import { TestBed } from '@suites/unit';
 import type { Mocked } from '@suites/unit';
 import { GetEventCollectionController } from './get-event-collection.controller';
 import { GetEventCollectionService } from './get-event-collection.service';
-import { GET_EVENTS_SERVICE } from './get-events.module.di';
+import { GET_EVENT_COLLECTION_SERVICE } from './get-event-collection.module.di';
 
 describe('EventController', () => {
     let controller: GetEventCollectionController;
@@ -12,7 +12,7 @@ describe('EventController', () => {
         const { unit, unitRef } = await TestBed.solitary(GetEventCollectionController).compile();
 
         controller = unit;
-        getEventsService = unitRef.get(GET_EVENTS_SERVICE);
+        getEventsService = unitRef.get(GET_EVENT_COLLECTION_SERVICE);
     });
 
     it('should be defined', () => {

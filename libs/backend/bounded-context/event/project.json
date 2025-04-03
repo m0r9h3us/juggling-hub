@@ -1,0 +1,13 @@
+{
+  "name": "libs-backend-bounded-context-event",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/backend/bounded-context/event/src",
+  "projectType": "library",
+  "tags": [
+    "backend"
+  ],
+  "// targets": "to see all targets run: nx show project libs-backend-bounded-context-event --web",
+  "targets": {
+    "tsc-lib": {}
+  }
+}
